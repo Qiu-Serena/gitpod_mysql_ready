@@ -6,9 +6,9 @@ mydb = mysql.connector.connect(
   password=""
 )
 
-mycursor = mydb.cursor()
+#mycursor = mydb.cursor()
 
-mycursor.execute("CREATE DATABASE Animali")
+#mycursor.execute("CREATE DATABASE Animali")
 
 mydb = mysql.connector.connect(
   host="localhost",
@@ -19,5 +19,5 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute ("CREATE TABLE Mammiferi (Id INT AUTO_INCREMENT PRIMARY KEY, Nome_Proprio VARCHAR(255), Razza VARCHAR(255), Peso (int), Eta (int)))
+mycursor.execute ("CREATE TABLE Mammiferi (Id INT AUTO_INCREMENT PRIMARY KEY, Nome_Proprio VARCHAR(255), Razza VARCHAR(255), Peso int, Eta int)")
 
